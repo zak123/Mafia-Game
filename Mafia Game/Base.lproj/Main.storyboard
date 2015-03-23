@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,262 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6J-m0-AFE">
+                                <rect key="frame" x="251" y="249" width="98" height="30"/>
+                                <state key="normal" title="Play as Sheriff"/>
+                                <connections>
+                                    <segue destination="56u-7G-tuS" kind="show" id="gPz-jX-fhj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-Qb-dlu">
+                                <rect key="frame" x="254" y="320" width="92" height="30"/>
+                                <state key="normal" title="Play as Mafia">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9bM-tn-Li0" kind="show" id="UsD-gj-EMR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s8Q-Qb-dlu" firstAttribute="top" secondItem="W6J-m0-AFE" secondAttribute="bottom" constant="41" id="Je9-97-r1Y"/>
+                            <constraint firstAttribute="centerX" secondItem="W6J-m0-AFE" secondAttribute="centerX" id="bch-rF-Ggo"/>
+                            <constraint firstAttribute="centerX" secondItem="s8Q-Qb-dlu" secondAttribute="centerX" id="hly-cU-FcQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="s8Q-Qb-dlu" secondAttribute="bottom" constant="250" id="j02-aI-AQn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="299" y="289"/>
+        </scene>
+        <!--Sheriff View Controller-->
+        <scene sceneID="TDr-WS-UN4">
+            <objects>
+                <viewController id="56u-7G-tuS" customClass="SheriffViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p0r-Un-m50"/>
+                        <viewControllerLayoutGuide type="bottom" id="bZS-61-6GR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfo-oO-VzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Civilians Alive:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o83-6Q-gkO">
+                                <rect key="frame" x="241" y="28" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iux-1u-5Cv">
+                                <rect key="frame" x="212" y="57" width="177" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RLv-rX-0fs">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-qc-syW">
+                                <rect key="frame" x="277" y="323" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="56u-7G-tuS" eventType="touchUpInside" id="h56-gj-pgd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="minigame question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiR-8D-4Ap">
+                                <rect key="frame" x="227" y="256" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Jsh-qc-syW" secondAttribute="centerX" id="P56-7r-0oc"/>
+                            <constraint firstAttribute="centerX" secondItem="RLv-rX-0fs" secondAttribute="centerX" id="R05-V3-2sv"/>
+                            <constraint firstAttribute="centerX" secondItem="o83-6Q-gkO" secondAttribute="centerX" id="ZX8-E0-fFo"/>
+                            <constraint firstAttribute="centerX" secondItem="iux-1u-5Cv" secondAttribute="centerX" id="eOx-ym-Mld"/>
+                            <constraint firstAttribute="centerX" secondItem="xiR-8D-4Ap" secondAttribute="centerX" id="moB-JH-qth"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerInputField" destination="RLv-rX-0fs" id="rGS-Bs-szl"/>
+                        <outlet property="civiliansAliveLabel" destination="iux-1u-5Cv" id="yU7-I9-6jS"/>
+                        <outlet property="minigameQuestion" destination="xiR-8D-4Ap" id="Iyn-NK-a14"/>
+                        <outlet property="submitButton" destination="Jsh-qc-syW" id="iLU-dO-BoB"/>
+                        <segue destination="LIz-1L-CGd" kind="show" identifier="youLoseSegue" id="3ii-D0-Yft"/>
+                        <segue destination="MSu-X7-MPf" kind="show" identifier="youWinSegue" id="nhq-SH-N2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmc-Jk-HU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="-86"/>
+        </scene>
+        <!--Mafia View Controller-->
+        <scene sceneID="W2d-Bz-8pI">
+            <objects>
+                <viewController id="9bM-tn-Li0" customClass="MafiaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="enp-qZ-tnd"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNM-Tk-OaV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I4t-hA-gCM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Innocent Civillians Alive:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdx-oM-JH0">
+                                <rect key="frame" x="208" y="28" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYL-tn-clt">
+                                <rect key="frame" x="252" y="264" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JYD-hc-TCP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="minigame question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-DC-dAR">
+                                <rect key="frame" x="227" y="235" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFh-nb-qYx">
+                                <rect key="frame" x="277" y="302" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAnswerMafia:" destination="9bM-tn-Li0" eventType="touchUpInside" id="sGe-6g-AzT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7or-27-P9c">
+                                <rect key="frame" x="286" y="57" width="28" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7or-27-P9c" secondAttribute="centerX" id="1ES-TV-6Gz"/>
+                            <constraint firstAttribute="centerX" secondItem="aPy-DC-dAR" secondAttribute="centerX" id="9gX-0L-YlQ"/>
+                            <constraint firstAttribute="centerX" secondItem="lYL-tn-clt" secondAttribute="centerX" id="QMW-ea-Us1"/>
+                            <constraint firstAttribute="centerX" secondItem="rdx-oM-JH0" secondAttribute="centerX" id="nyx-Le-aYP"/>
+                            <constraint firstAttribute="centerX" secondItem="GFh-nb-qYx" secondAttribute="centerX" id="wGS-n5-wWV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerInputField" destination="lYL-tn-clt" id="Z2C-M3-mgR"/>
+                        <outlet property="civilianStatusLabel" destination="7or-27-P9c" id="fBm-AB-IsJ"/>
+                        <outlet property="minigameQuestion" destination="aPy-DC-dAR" id="vUL-St-g7m"/>
+                        <outlet property="submitButton" destination="GFh-nb-qYx" id="YHD-pa-SqY"/>
+                        <segue destination="LIz-1L-CGd" kind="show" identifier="youLoseSegue" id="cCl-em-xw5"/>
+                        <segue destination="MSu-X7-MPf" kind="show" identifier="youWinSegue" id="2VR-Ky-Oeg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQq-oj-EoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="745"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="aBa-Dj-bVL">
+            <objects>
+                <viewController id="LIz-1L-CGd" customClass="GameOverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O4i-fq-BnM"/>
+                        <viewControllerLayoutGuide type="bottom" id="RFo-JQ-Ecf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Xy-bS-fjD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You Lose" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWo-aW-ugo">
+                                <rect key="frame" x="265" y="289" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-HS-efV">
+                                <rect key="frame" x="275" y="196" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="OCi-ly-iW8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7bi-HS-efV" secondAttribute="centerX" id="8UJ-e2-SZ2"/>
+                            <constraint firstAttribute="centerX" secondItem="WWo-aW-ugo" secondAttribute="centerX" id="C7E-k6-lzV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lossReason" destination="WWo-aW-ugo" id="QWM-ru-Gkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krF-Rg-QR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="-76"/>
+        </scene>
+        <!--You Win View Controller-->
+        <scene sceneID="LQ4-co-reV">
+            <objects>
+                <viewController id="MSu-X7-MPf" customClass="YouWinViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ca5-kL-H0z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dwj-r4-ESv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ba-xr-Rdy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You Win!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-jb-jmy">
+                                <rect key="frame" x="267" y="289" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF6-SE-Gvm">
+                                <rect key="frame" x="275" y="192" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="vjy-Hr-TB9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="A0g-jb-jmy" secondAttribute="centerX" id="OoH-yE-bot"/>
+                            <constraint firstAttribute="centerX" secondItem="hF6-SE-Gvm" secondAttribute="centerX" id="lCn-v0-lgR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="winReason" destination="A0g-jb-jmy" id="4Hc-5N-I3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aC3-ya-Euf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="696"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vjy-Hr-TB9"/>
+        <segue reference="nhq-SH-N2n"/>
+        <segue reference="3ii-D0-Yft"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,11 @@
 		B66F03AA1AC0884E00366AAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F03A91AC0884E00366AAF /* Images.xcassets */; };
 		B66F03AD1AC0884E00366AAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66F03AB1AC0884E00366AAF /* LaunchScreen.xib */; };
 		B66F03B91AC0884E00366AAF /* Mafia_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03B81AC0884E00366AAF /* Mafia_GameTests.m */; };
+		B66F03C41AC091AE00366AAF /* MafiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03C31AC091AE00366AAF /* MafiaViewController.m */; };
+		B66F03C71AC091BA00366AAF /* SheriffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03C61AC091BA00366AAF /* SheriffViewController.m */; };
+		B66F03CA1AC092FD00366AAF /* MiniGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03C91AC092FD00366AAF /* MiniGame.m */; };
+		B66F03CD1AC0C5EB00366AAF /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03CC1AC0C5EB00366AAF /* GameOverViewController.m */; };
+		B66F03D01AC0D3A500366AAF /* YouWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03CF1AC0D3A500366AAF /* YouWinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		B66F03B21AC0884E00366AAF /* Mafia GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mafia GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F03B71AC0884E00366AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66F03B81AC0884E00366AAF /* Mafia_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mafia_GameTests.m; sourceTree = "<group>"; };
+		B66F03C21AC091AE00366AAF /* MafiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MafiaViewController.h; sourceTree = "<group>"; };
+		B66F03C31AC091AE00366AAF /* MafiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MafiaViewController.m; sourceTree = "<group>"; };
+		B66F03C51AC091BA00366AAF /* SheriffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheriffViewController.h; sourceTree = "<group>"; };
+		B66F03C61AC091BA00366AAF /* SheriffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheriffViewController.m; sourceTree = "<group>"; };
+		B66F03C81AC092FD00366AAF /* MiniGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGame.h; sourceTree = "<group>"; };
+		B66F03C91AC092FD00366AAF /* MiniGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniGame.m; sourceTree = "<group>"; };
+		B66F03CB1AC0C5EB00366AAF /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		B66F03CC1AC0C5EB00366AAF /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		B66F03CE1AC0D3A500366AAF /* YouWinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouWinViewController.h; sourceTree = "<group>"; };
+		B66F03CF1AC0D3A500366AAF /* YouWinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouWinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +100,17 @@
 				B66F03A11AC0884E00366AAF /* AppDelegate.m */,
 				B66F03A31AC0884E00366AAF /* ViewController.h */,
 				B66F03A41AC0884E00366AAF /* ViewController.m */,
+				B66F03C81AC092FD00366AAF /* MiniGame.h */,
+				B66F03C91AC092FD00366AAF /* MiniGame.m */,
 				B66F03A61AC0884E00366AAF /* Main.storyboard */,
+				B66F03CB1AC0C5EB00366AAF /* GameOverViewController.h */,
+				B66F03CE1AC0D3A500366AAF /* YouWinViewController.h */,
+				B66F03CF1AC0D3A500366AAF /* YouWinViewController.m */,
+				B66F03CC1AC0C5EB00366AAF /* GameOverViewController.m */,
+				B66F03C21AC091AE00366AAF /* MafiaViewController.h */,
+				B66F03C31AC091AE00366AAF /* MafiaViewController.m */,
+				B66F03C51AC091BA00366AAF /* SheriffViewController.h */,
+				B66F03C61AC091BA00366AAF /* SheriffViewController.m */,
 				B66F03A91AC0884E00366AAF /* Images.xcassets */,
 				B66F03AB1AC0884E00366AAF /* LaunchScreen.xib */,
 				B66F039C1AC0884E00366AAF /* Supporting Files */,
@@ -219,7 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66F03CA1AC092FD00366AAF /* MiniGame.m in Sources */,
+				B66F03C71AC091BA00366AAF /* SheriffViewController.m in Sources */,
 				B66F03A51AC0884E00366AAF /* ViewController.m in Sources */,
+				B66F03D01AC0D3A500366AAF /* YouWinViewController.m in Sources */,
+				B66F03C41AC091AE00366AAF /* MafiaViewController.m in Sources */,
+				B66F03CD1AC0C5EB00366AAF /* GameOverViewController.m in Sources */,
 				B66F03A21AC0884E00366AAF /* AppDelegate.m in Sources */,
 				B66F039F1AC0884E00366AAF /* main.m in Sources */,
 			);
