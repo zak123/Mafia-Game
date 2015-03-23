@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B66F039F1AC0884E00366AAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F039E1AC0884E00366AAF /* main.m */; };
+		B66F03A21AC0884E00366AAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03A11AC0884E00366AAF /* AppDelegate.m */; };
+		B66F03A51AC0884E00366AAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03A41AC0884E00366AAF /* ViewController.m */; };
+		B66F03A81AC0884E00366AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F03A61AC0884E00366AAF /* Main.storyboard */; };
+		B66F03AA1AC0884E00366AAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F03A91AC0884E00366AAF /* Images.xcassets */; };
+		B66F03AD1AC0884E00366AAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66F03AB1AC0884E00366AAF /* LaunchScreen.xib */; };
+		B66F03B91AC0884E00366AAF /* Mafia_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F03B81AC0884E00366AAF /* Mafia_GameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B66F03B31AC0884E00366AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B66F03911AC0884E00366AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B66F03981AC0884E00366AAF;
+			remoteInfo = "Mafia Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B66F03991AC0884E00366AAF /* Mafia Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mafia Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66F039D1AC0884E00366AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66F039E1AC0884E00366AAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B66F03A01AC0884E00366AAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B66F03A11AC0884E00366AAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B66F03A31AC0884E00366AAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B66F03A41AC0884E00366AAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B66F03A71AC0884E00366AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B66F03A91AC0884E00366AAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B66F03AC1AC0884E00366AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B66F03B21AC0884E00366AAF /* Mafia GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mafia GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66F03B71AC0884E00366AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66F03B81AC0884E00366AAF /* Mafia_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mafia_GameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B66F03961AC0884E00366AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66F03AF1AC0884E00366AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B66F03901AC0884E00366AAF = {
+			isa = PBXGroup;
+			children = (
+				B66F039B1AC0884E00366AAF /* Mafia Game */,
+				B66F03B51AC0884E00366AAF /* Mafia GameTests */,
+				B66F039A1AC0884E00366AAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B66F039A1AC0884E00366AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B66F03991AC0884E00366AAF /* Mafia Game.app */,
+				B66F03B21AC0884E00366AAF /* Mafia GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B66F039B1AC0884E00366AAF /* Mafia Game */ = {
+			isa = PBXGroup;
+			children = (
+				B66F03A01AC0884E00366AAF /* AppDelegate.h */,
+				B66F03A11AC0884E00366AAF /* AppDelegate.m */,
+				B66F03A31AC0884E00366AAF /* ViewController.h */,
+				B66F03A41AC0884E00366AAF /* ViewController.m */,
+				B66F03A61AC0884E00366AAF /* Main.storyboard */,
+				B66F03A91AC0884E00366AAF /* Images.xcassets */,
+				B66F03AB1AC0884E00366AAF /* LaunchScreen.xib */,
+				B66F039C1AC0884E00366AAF /* Supporting Files */,
+			);
+			path = "Mafia Game";
+			sourceTree = "<group>";
+		};
+		B66F039C1AC0884E00366AAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66F039D1AC0884E00366AAF /* Info.plist */,
+				B66F039E1AC0884E00366AAF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B66F03B51AC0884E00366AAF /* Mafia GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				B66F03B81AC0884E00366AAF /* Mafia_GameTests.m */,
+				B66F03B61AC0884E00366AAF /* Supporting Files */,
+			);
+			path = "Mafia GameTests";
+			sourceTree = "<group>";
+		};
+		B66F03B61AC0884E00366AAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66F03B71AC0884E00366AAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B66F03981AC0884E00366AAF /* Mafia Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66F03BC1AC0884E00366AAF /* Build configuration list for PBXNativeTarget "Mafia Game" */;
+			buildPhases = (
+				B66F03951AC0884E00366AAF /* Sources */,
+				B66F03961AC0884E00366AAF /* Frameworks */,
+				B66F03971AC0884E00366AAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mafia Game";
+			productName = "Mafia Game";
+			productReference = B66F03991AC0884E00366AAF /* Mafia Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B66F03B11AC0884E00366AAF /* Mafia GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66F03BF1AC0884E00366AAF /* Build configuration list for PBXNativeTarget "Mafia GameTests" */;
+			buildPhases = (
+				B66F03AE1AC0884E00366AAF /* Sources */,
+				B66F03AF1AC0884E00366AAF /* Frameworks */,
+				B66F03B01AC0884E00366AAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B66F03B41AC0884E00366AAF /* PBXTargetDependency */,
+			);
+			name = "Mafia GameTests";
+			productName = "Mafia GameTests";
+			productReference = B66F03B21AC0884E00366AAF /* Mafia GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B66F03911AC0884E00366AAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = cghcapital;
+				TargetAttributes = {
+					B66F03981AC0884E00366AAF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B66F03B11AC0884E00366AAF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B66F03981AC0884E00366AAF;
+					};
+				};
+			};
+			buildConfigurationList = B66F03941AC0884E00366AAF /* Build configuration list for PBXProject "Mafia Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B66F03901AC0884E00366AAF;
+			productRefGroup = B66F039A1AC0884E00366AAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B66F03981AC0884E00366AAF /* Mafia Game */,
+				B66F03B11AC0884E00366AAF /* Mafia GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B66F03971AC0884E00366AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66F03A81AC0884E00366AAF /* Main.storyboard in Resources */,
+				B66F03AD1AC0884E00366AAF /* LaunchScreen.xib in Resources */,
+				B66F03AA1AC0884E00366AAF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66F03B01AC0884E00366AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B66F03951AC0884E00366AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66F03A51AC0884E00366AAF /* ViewController.m in Sources */,
+				B66F03A21AC0884E00366AAF /* AppDelegate.m in Sources */,
+				B66F039F1AC0884E00366AAF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66F03AE1AC0884E00366AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66F03B91AC0884E00366AAF /* Mafia_GameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B66F03B41AC0884E00366AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B66F03981AC0884E00366AAF /* Mafia Game */;
+			targetProxy = B66F03B31AC0884E00366AAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B66F03A61AC0884E00366AAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66F03A71AC0884E00366AAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B66F03AB1AC0884E00366AAF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66F03AC1AC0884E00366AAF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B66F03BA1AC0884E00366AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B66F03BB1AC0884E00366AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B66F03BD1AC0884E00366AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mafia Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B66F03BE1AC0884E00366AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mafia Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B66F03C01AC0884E00366AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mafia GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mafia Game.app/Mafia Game";
+			};
+			name = Debug;
+		};
+		B66F03C11AC0884E00366AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mafia GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mafia Game.app/Mafia Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B66F03941AC0884E00366AAF /* Build configuration list for PBXProject "Mafia Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66F03BA1AC0884E00366AAF /* Debug */,
+				B66F03BB1AC0884E00366AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B66F03BC1AC0884E00366AAF /* Build configuration list for PBXNativeTarget "Mafia Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66F03BD1AC0884E00366AAF /* Debug */,
+				B66F03BE1AC0884E00366AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B66F03BF1AC0884E00366AAF /* Build configuration list for PBXNativeTarget "Mafia GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66F03C01AC0884E00366AAF /* Debug */,
+				B66F03C11AC0884E00366AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B66F03911AC0884E00366AAF /* Project object */;
+}
